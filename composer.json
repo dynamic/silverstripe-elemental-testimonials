@@ -18,7 +18,8 @@
     "require": {
         "silverstripe/recipe-cms": "^1.0",
         "silverstripe/vendor-plugin": "^1.0",
-        "dnadesign/silverstripe-elemental": "^2@dev"
+        "dnadesign/silverstripe-elemental": "^2@dev",
+        "symbiote/silverstripe-gridfieldextensions": "^3.0"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7",
