@@ -1,0 +1,47 @@
+{
+    "name": "dynamic/silverstripe-elemental-testimonials",
+    "description": "Testimonials element for the SilverStripe Elemental Module",
+    "authors": [
+        {
+            "name": "Dynamic",
+            "email": "dev@dynamicagency.com",
+            "homepage": "http://www.dynamicagency.com"
+        }
+    ],
+    "keywords": [
+        "silverstripe",
+        "elemental",
+        "testimonials"
+    ],
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "require": {
+        "silverstripe/recipe-cms": "^1.0",
+        "silverstripe/vendor-plugin": "^1.0",
+        "dnadesign/silverstripe-elemental": "^2@dev"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "^5.7",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "autoload": {
+        "psr-4": {
+            "Dynamic\\Elements\\": "src/",
+            "Dynamic\\Elements\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "scripts": {
+        "lint": "vendor/bin/phpcs src/ tests/",
+        "lint-clean": "vendor/bin/phpcbf src/ tests/"
+    }
+}

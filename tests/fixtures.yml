@@ -1,0 +1,59 @@
+Dynamic\Elements\Model\TestimonialCategory:
+  one:
+    Title: "Category Foo"
+  two:
+    Title: "Category Bar"
+  three:
+    Title: "Category Baz"
+Dynamic\Elements\Elements\ElementTestimonials:
+  one:
+    Title: "Testimonials"
+    Limit: 4
+    Content: "<p>Recent Testimonials</p>"
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.one
+  two:
+    Title: "Testimonials set two"
+    Limit: 1
+    Content: "<p>Just one here</p>"
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.one
+  three:
+    Title: "Testimonials set three"
+    Limit: 3
+    Content: "<p>Three from different Categories</p>"
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.two,=>Dynamic\Elements\Model\TestimonialCategory.three
+Dynamic\Elements\Model\Testimonial:
+  one:
+    Title: "Testimonial One"
+    Content: "Foo"
+    Name: "Jon"
+    Position: "Top Dog"
+    Affiliation: "The Awesome Company"
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.one,=>Dynamic\Elements\Model\TestimonialCategory.two
+  two:
+    Title: "Flamethrowers"
+    Content: "Let's buy one"
+    Name: "Elon"
+    Position: "Inventor"
+    Affiliation: "The Boring Company"
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.one
+  three:
+    Title: "Falcon Heavy"
+    Content: "Let's go to Mars!"
+    Name: "Space Man"
+    Position: "Space Car Driver"
+    Affiliation: "Falcon Rocket Systems"
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.one,=>Dynamic\Elements\Model\TestimonialCategory.three
+  four:
+    Title: "Sites Galore"
+    Content: "Making easy to use sites!"
+    Name: "Dynamic"
+    Position: "Dynamic Developer"
+    Affiliation: "Dynamic Inc"
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.one
+  five:
+    Title: "Just another testimonial"
+    Content: "I have something to say"
+    Name: "Anonymous"
+    Position: "Wouldn't you like to know"
+    Affiliation: "That's hidden"
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.three
