@@ -98,6 +98,12 @@ class ElementTestimonials extends BaseElement
     public function getTestimonialsList()
     {
         $random = DB::get_conn()->random();
-        return Testimonial::get()->sort($random)->limit($this->Limit);
+        $testimonials = Testimonial::get();
+
+        if ($this->TestimonialCategories()) {
+            $testimonials = $testimonials->filterAny(['TestimonialCategories.ID' => $this->TestimonialCategories()->column()]);
+        }
+
+        return $testimonials->sort($random)->limit($this->Limit);
     }
 }
