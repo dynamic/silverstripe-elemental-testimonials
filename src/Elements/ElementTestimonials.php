@@ -6,8 +6,10 @@ use DNADesign\Elemental\Models\BaseElement;
 use Dynamic\Elements\Model\Testimonial;
 use Dynamic\Elements\Model\TestimonialCategory;
 use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\GridField\GridFieldAddExistingAutocompleter;
 use SilverStripe\ORM\DB;
 use SilverStripe\ORM\FieldType\DBField;
+use Symbiote\GridFieldExtensions\GridFieldAddExistingSearchButton;
 
 /**
  * Class ElementTestimonials
@@ -87,6 +89,12 @@ class ElementTestimonials extends BaseElement
 
             $fields->dataFieldByName('Limit')
                 ->setTitle('Testimonials to show');
+
+            if ($this->exists()) {
+                $config = $fields->dataFieldByName('TestimonialCategories')->getConfig();
+                $config->removeComponentsByType(GridFieldAddExistingAutocompleter::class);
+                $config->addComponent(new GridFieldAddExistingSearchButton());
+            }
         });
 
         return parent::getCMSFields();
@@ -100,8 +108,9 @@ class ElementTestimonials extends BaseElement
         $random = DB::get_conn()->random();
         $testimonials = Testimonial::get();
 
-        if ($this->TestimonialCategories()) {
-            $testimonials = $testimonials->filterAny(['TestimonialCategories.ID' => $this->TestimonialCategories()->column()]);
+        $categories = $this->TestimonialCategories();
+        if ($categories->count() > 0) {
+            $testimonials = $testimonials->filterAny(['TestimonialCategories.ID' => $categories->column()]);
         }
 
         return $testimonials->sort($random)->limit($this->Limit);
