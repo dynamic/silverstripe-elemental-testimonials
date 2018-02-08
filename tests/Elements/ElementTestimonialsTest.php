@@ -1,6 +1,6 @@
 <?php
 
-namespace Dynamic\Elements\Elements\Tests;
+namespace Dynamic\Elements\Tests\Elements;
 
 use Dynamic\Elements\Elements\ElementTestimonials;
 use Dynamic\Elements\Elements\TestimonialsElement;
@@ -11,7 +11,7 @@ use SilverStripe\ORM\DataList;
 
 /**
  * Class ElementTestimonialsTest
- * @package Dynamic\Elements\Elements\Tests
+ * @package Dynamic\Elements\Tests\Elements
  */
 class ElementTestimonialsTest extends SapphireTest
 {
