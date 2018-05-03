@@ -10,7 +10,7 @@
                     <% if $Content %><p>$Content</p><% end_if %>
                     <% if $Name || $Affiliation %>
                     <footer class="blockquote-footer">
-                        <% if $Name %>$Name<% end_if %><% if $$Affiliation %><% if $Name && $Affilication %> - <% end_if %>$Affiliation<% end_if %>
+                        <% if $Name %>$Name<% end_if %><% if $Affiliation %><% if $Name && $Affiliation %> - <% end_if %>$Affiliation<% end_if %>
                     </footer>
                     <% end_if %>
                 </blockquote>
