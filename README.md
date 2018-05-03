@@ -15,8 +15,63 @@ Testimonial Element for SilverStripe 4.
 
 ## Requirements
 
-- SilverStripe ^4.0
+* SilverStripe ^4.0
+* SilverStripe Elemental ^2.0
 
 ## Installation
 
 `composer require dynamic/silverstripe-elemental-testimonials`
+
+## Usage
+
+Elemental Testimonials Block will add the following Element to your site:
+
+* Testimonials
+
+The Testimonials Element pulls testimonials from a specified Testimonial Category. They are displayed on the front-end in a random order. You can also set how many should testimonials should display.
+
+Each Testimonial includes the following fields:
+
+* Title
+* Content
+* Name
+* Position
+* Affiliation
+
+## Screen Shots
+
+#### Front End sample of a Testimonial Element
+The default templates are based off [Bootstrap 4](https://getbootstrap.com/) classes/styling
+
+![Front End sample of a Testimonials Element](./readme-images/testimonial-block-sample.jpg)
+
+#### CMS - Testimonials Main Tab
+![Front End sample of a Testimonials Element](./readme-images/testimonial-block-cms-main.jpg)
+
+#### CMS - Testimonials Category Tab
+![Front End sample of a Testimonials Element](./readme-images/testimonial-block-cms-categories.jpg)
+
+#### CMS - Testimonials List
+![Front End sample of a Testimonials Element](./readme-images/testimonial-block-cms-testimonial-list.jpg)
+
+#### CMS - Testimonials Edit
+![Front End sample of a Testimonials Element](./readme-images/testimonial-block-cms-testimonial-edit.jpg)
+
+## Getting more elements
+
+Other elemental modules by Dynamic:
+
+* SilverStripe Elemental Blocks
+	* [Packagist](https://packagist.org/packages/dynamic/silverstripe-elemental-blocks)
+	* [GitHub](https://github.com/dynamic/silverstripe-elemental-blocks)
+* [SilverStripe Elemental Flexslider](https://github.com/dynamic/silverstripe-elemental-flexslider)  
+* [SilverStripe Elemental Blog](https://github.com/dynamic/silverstripe-elemental-blog)  
+* [SilverStripe Elemental Sponsors](https://github.com/dynamic/silverstripe-elemental-sponsors)  
+* [SilverStripe Elemental Accordion](https://github.com/dynamic/silverstripe-elemental-accordion)  
+* [SilverStripe Elemental Countdown](https://github.com/dynamic/silverstripe-elemental-countdown)  
+* [SilverStripe Elemental Customer Service](https://github.com/dynamic/silverstripe-elemental-customer-service)  
+* [SilverStripe Elemental oEmbed](https://github.com/dynamic/silverstripe-elemental-oembed)  
+
+## Configuration
+
+See [SilverStripe Elemental Configuration](https://github.com/dnadesign/silverstripe-elemental#configuration)
