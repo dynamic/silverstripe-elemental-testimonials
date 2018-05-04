@@ -46,16 +46,16 @@ The default templates are based off [Bootstrap 4](https://getbootstrap.com/) cla
 ![Front End sample of a Testimonials Element](./readme-images/testimonial-block-sample.jpg)
 
 #### CMS - Testimonials Main Tab
-![Front End sample of a Testimonials Element](./readme-images/testimonial-block-cms-main.jpg)
+![CMS - Testimonials Main Tab](./readme-images/testimonial-block-cms-main.jpg)
 
 #### CMS - Testimonials Category Tab
-![Front End sample of a Testimonials Element](./readme-images/testimonial-block-cms-categories.jpg)
+![CMS - Testimonials Category Tab](./readme-images/testimonial-block-cms-categories.jpg)
 
 #### CMS - Testimonials List
-![Front End sample of a Testimonials Element](./readme-images/testimonial-block-cms-testimonial-list.jpg)
+![CMS - Testimonials List](./readme-images/testimonial-block-cms-testimonial-list.jpg)
 
 #### CMS - Testimonials Edit
-![Front End sample of a Testimonials Element](./readme-images/testimonial-block-cms-testimonial-edit.jpg)
+![CMS - Testimonials Edit](./readme-images/testimonial-block-cms-testimonial-edit.jpg)
 
 ## Getting more elements
 
