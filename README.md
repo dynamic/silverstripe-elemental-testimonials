@@ -59,18 +59,7 @@ The default templates are based off [Bootstrap 4](https://getbootstrap.com/) cla
 
 ## Getting more elements
 
-Other elemental modules by Dynamic:
-
-* SilverStripe Elemental Blocks
-	* [Packagist](https://packagist.org/packages/dynamic/silverstripe-elemental-blocks)
-	* [GitHub](https://github.com/dynamic/silverstripe-elemental-blocks)
-* [SilverStripe Elemental Flexslider](https://github.com/dynamic/silverstripe-elemental-flexslider)  
-* [SilverStripe Elemental Blog](https://github.com/dynamic/silverstripe-elemental-blog)  
-* [SilverStripe Elemental Sponsors](https://github.com/dynamic/silverstripe-elemental-sponsors)  
-* [SilverStripe Elemental Accordion](https://github.com/dynamic/silverstripe-elemental-accordion)  
-* [SilverStripe Elemental Countdown](https://github.com/dynamic/silverstripe-elemental-countdown)  
-* [SilverStripe Elemental Customer Service](https://github.com/dynamic/silverstripe-elemental-customer-service)  
-* [SilverStripe Elemental oEmbed](https://github.com/dynamic/silverstripe-elemental-oembed)  
+See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#getting-more-elements)
 
 ## Configuration
 
