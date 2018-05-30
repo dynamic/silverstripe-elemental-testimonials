@@ -3,6 +3,8 @@
 namespace Dynamic\Elements\Model;
 
 use SilverStripe\ORM\DataObject;
+use SilverStripe\Security\Permission;
+use SilverStripe\Security\PermissionProvider;
 
 /**
  * Class Testimonial
@@ -14,7 +16,7 @@ use SilverStripe\ORM\DataObject;
  * @property string $Position
  * @property string $Affiliation
  */
-class Testimonial extends DataObject
+class Testimonial extends DataObject implements PermissionProvider
 {
     /**
      * @var string
@@ -65,6 +67,51 @@ class Testimonial extends DataObject
     private static $summary_fields = [
         'Title',
         'Content.Summary',
-        'Name'
+        'Name',
     ];
+
+    /**
+     * @return array
+     */
+    public function providePermissions()
+    {
+        return ['Testimonial_MANAGE' => 'Manage Testimonials'];
+    }
+
+    /**
+     * @param null $member
+     * @param array $context
+     * @return bool|int
+     */
+    public function canCreate($member = null, $context = [])
+    {
+        return Permission::check('Testimonial_MANAGE', 'any', $member);
+    }
+
+    /**
+     * @param null $member
+     * @return bool|int
+     */
+    public function canEdit($member = null)
+    {
+        return Permission::check('Testimonial_MANAGE', 'any', $member);
+    }
+
+    /**
+     * @param null $member
+     * @return bool|int
+     */
+    public function canDelete($member = null)
+    {
+        return Permission::check('Testimonial_MANAGE', 'any', $member);
+    }
+
+    /**
+     * @param null $member
+     * @return bool
+     */
+    public function canView($member = null)
+    {
+        return true;
+    }
 }
