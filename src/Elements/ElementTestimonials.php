@@ -113,6 +113,11 @@ class ElementTestimonials extends BaseElement
             $testimonials = $testimonials->filterAny(['TestimonialCategories.ID' => $categories->column()]);
         }
 
-        return $testimonials->sort($random)->limit($this->Limit);
+        $testimonials = $testimonials->sort($random);
+        if (0 < $this->Limit) {
+            $testimonials = $testimonials->limit($this->Limit);
+        }
+
+        return $testimonials;
     }
 }
