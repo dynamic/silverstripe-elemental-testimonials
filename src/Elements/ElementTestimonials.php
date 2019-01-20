@@ -7,6 +7,7 @@ use Dynamic\Elements\Model\Testimonial;
 use Dynamic\Elements\Model\TestimonialCategory;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridFieldAddExistingAutocompleter;
+use SilverStripe\Forms\ListboxField;
 use SilverStripe\ORM\DB;
 use SilverStripe\ORM\FieldType\DBField;
 use Symbiote\GridFieldExtensions\GridFieldAddExistingSearchButton;
@@ -23,7 +24,7 @@ class ElementTestimonials extends BaseElement
     /**
      * @var string
      */
-    private static $icon = 'vendor/dnadesign/silverstripe-elemental/images/base.svg';
+    private static $icon = 'font-icon-chat';
 
     /**
      * @var string
@@ -65,9 +66,33 @@ class ElementTestimonials extends BaseElement
     /**
      * @return DBHTMLText
      */
-    public function ElementSummary()
+    public function getSummary()
     {
-        return DBField::create_field('HTMLText', $this->Content)->Summary(20);
+        if ($this->TestimonialCategories()->count() > 0) {
+            $ct = 0;
+            foreach ($this->TestimonialCategories() as $category) {
+                $ct += $category->Testimonials()->count();
+            }
+            if ($ct == 1) {
+                $label = ' testimonial';
+            } else {
+                $label = ' testimonials';
+            }
+            return DBField::create_field(
+                'HTMLText',
+                $ct . $label
+            )->Summary(20);
+        }
+    }
+
+    /**
+     * @return array
+     */
+    protected function provideBlockSchema()
+    {
+        $blockSchema = parent::provideBlockSchema();
+        $blockSchema['content'] = $this->getSummary();
+        return $blockSchema;
     }
 
     /**
@@ -88,12 +113,21 @@ class ElementTestimonials extends BaseElement
                 ->setRows(8);
 
             $fields->dataFieldByName('Limit')
-                ->setTitle('Testimonials to show');
+                ->setTitle('Number of testimonials to show');
 
             if ($this->exists()) {
-                $config = $fields->dataFieldByName('TestimonialCategories')->getConfig();
-                $config->removeComponentsByType(GridFieldAddExistingAutocompleter::class);
-                $config->addComponent(new GridFieldAddExistingSearchButton());
+                $fields->removeByName([
+                    'TestimonialCategories'
+                ]);
+
+                $fields->addFieldToTab('Root.Main',
+                    'Limit',
+                    ListboxField::create(
+                        'TestimonialCategories',
+                        'Categories',
+                        TestimonialCategory::get()->map()->toArray()
+                    )
+                );
             }
         });
 
