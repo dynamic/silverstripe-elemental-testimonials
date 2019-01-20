@@ -23,10 +23,10 @@ class ElementTestimonialsTest extends SapphireTest
     /**
      *
      */
-    public function testGetElementSummary()
+    public function testGetSummary()
     {
         $element = $this->objFromFixture(ElementTestimonials::class, 'one');
-        $this->assertEquals($element->dbObject('Content')->Summary(20), $element->ElementSummary());
+        $this->assertEquals('4 testimonials', $element->getSummary());
     }
 
     /**
