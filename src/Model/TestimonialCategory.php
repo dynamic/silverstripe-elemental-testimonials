@@ -16,12 +16,12 @@ class TestimonialCategory extends DataObject
     /**
      * @var string
      */
-    private static $singular_name = 'Testimonial Category';
+    private static $singular_name = 'Category';
 
     /**
      * @var string
      */
-    private static $plural_name = 'Testimonial Categories';
+    private static $plural_name = 'Categories';
 
     /**
      * @var string
