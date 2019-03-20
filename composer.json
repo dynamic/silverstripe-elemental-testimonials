@@ -16,13 +16,12 @@
     "type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
     "require": {
-        "silverstripe/recipe-cms": "^4@dev",
-        "silverstripe/vendor-plugin": "^1@dev",
-        "dnadesign/silverstripe-elemental": "^4@dev",
-        "symbiote/silverstripe-gridfieldextensions": "^3@dev"
+        "silverstripe/vendor-plugin": "^1.0",
+        "dnadesign/silverstripe-elemental": "^4.0",
+        "symbiote/silverstripe-gridfieldextensions": "^3.0"
     },
     "require-dev": {
-        "phpunit/PHPUnit": "^5.7",
+        "phpunit/phpunit": "^5.7",
         "squizlabs/php_codesniffer": "*"
     },
     "config": {
