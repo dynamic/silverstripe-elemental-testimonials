@@ -122,12 +122,12 @@ class ElementTestimonials extends BaseElement
 
                 $fields->addFieldToTab(
                     'Root.Main',
-                    'Limit',
                     ListboxField::create(
                         'TestimonialCategories',
                         'Categories',
                         TestimonialCategory::get()->map()->toArray()
-                    )
+                    ),
+                    'Limit'
                 );
             }
         });
@@ -148,7 +148,7 @@ class ElementTestimonials extends BaseElement
             $testimonials = $testimonials->filterAny(['TestimonialCategories.ID' => $categories->column()]);
         }
 
-        $testimonials = $testimonials->sort($random);
+        $testimonials = $testimonials->orderBy($random);
         if (0 < $this->Limit) {
             $testimonials = $testimonials->limit($this->Limit);
         }
