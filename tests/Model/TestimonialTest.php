@@ -18,7 +18,7 @@ class TestimonialTest extends SapphireTest
     protected static $fixture_file = '../fixtures.yml';
 
     /**
-     * 
+     *
      */
     public function testProvidePermissions()
     {
@@ -39,7 +39,10 @@ class TestimonialTest extends SapphireTest
      */
     public function testCanEdit()
     {
-        $this->assertTrue($this->objFromFixture(Testimonial::class, 'one')->canEdit($this->objFromFixture(Member::class, 'site-owner')));
+        $this->assertTrue(
+            $this->objFromFixture(Testimonial::class, 'one')
+                ->canEdit($this->objFromFixture(Member::class, 'site-owner'))
+        );
         $this->assertFalse($this->objFromFixture(Testimonial::class, 'one')->canEdit(Member::singleton()));
     }
 
@@ -48,7 +51,10 @@ class TestimonialTest extends SapphireTest
      */
     public function testCanDelete()
     {
-        $this->assertTrue($this->objFromFixture(Testimonial::class, 'one')->canDelete($this->objFromFixture(Member::class, 'site-owner')));
+        $this->assertTrue(
+            $this->objFromFixture(Testimonial::class, 'one')
+                ->canDelete($this->objFromFixture(Member::class, 'site-owner'))
+        );
         $this->assertFalse($this->objFromFixture(Testimonial::class, 'one')->canDelete(Member::singleton()));
     }
 
@@ -57,7 +63,10 @@ class TestimonialTest extends SapphireTest
      */
     public function testCanView()
     {
-        $this->assertTrue($this->objFromFixture(Testimonial::class, 'one')->canView($this->objFromFixture(Member::class, 'site-owner')));
+        $this->assertTrue(
+            $this->objFromFixture(Testimonial::class, 'one')
+                ->canView($this->objFromFixture(Member::class, 'site-owner'))
+        );
         $this->assertTrue($this->objFromFixture(Testimonial::class, 'one')->canView(Member::singleton()));
     }
 }

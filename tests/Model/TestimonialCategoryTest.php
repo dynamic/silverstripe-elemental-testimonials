@@ -22,7 +22,10 @@ class TestimonialCategoryTest extends SapphireTest
      */
     public function testCanCreate()
     {
-        $this->assertTrue(TestimonialCategory::singleton()->canCreate($this->objFromFixture(Member::class, 'site-owner')));
+        $this->assertTrue(
+            TestimonialCategory::singleton()
+                ->canCreate($this->objFromFixture(Member::class, 'site-owner'))
+        );
         $this->assertFalse(TestimonialCategory::singleton()->canCreate(Member::singleton()));
     }
 
@@ -31,7 +34,10 @@ class TestimonialCategoryTest extends SapphireTest
      */
     public function testCanEdit()
     {
-        $this->assertTrue($this->objFromFixture(TestimonialCategory::class, 'one')->canEdit($this->objFromFixture(Member::class, 'site-owner')));
+        $this->assertTrue(
+            $this->objFromFixture(TestimonialCategory::class, 'one')
+                ->canEdit($this->objFromFixture(Member::class, 'site-owner'))
+        );
         $this->assertFalse($this->objFromFixture(TestimonialCategory::class, 'one')->canEdit(Member::singleton()));
     }
 
@@ -40,7 +46,10 @@ class TestimonialCategoryTest extends SapphireTest
      */
     public function testCanDelete()
     {
-        $this->assertTrue($this->objFromFixture(TestimonialCategory::class, 'one')->canDelete($this->objFromFixture(Member::class, 'site-owner')));
+        $this->assertTrue(
+            $this->objFromFixture(TestimonialCategory::class, 'one')
+                ->canDelete($this->objFromFixture(Member::class, 'site-owner'))
+        );
         $this->assertFalse($this->objFromFixture(TestimonialCategory::class, 'one')->canDelete(Member::singleton()));
     }
 
@@ -49,7 +58,10 @@ class TestimonialCategoryTest extends SapphireTest
      */
     public function testCanView()
     {
-        $this->assertTrue($this->objFromFixture(TestimonialCategory::class, 'one')->canView($this->objFromFixture(Member::class, 'site-owner')));
+        $this->assertTrue(
+            $this->objFromFixture(TestimonialCategory::class, 'one')
+                ->canView($this->objFromFixture(Member::class, 'site-owner'))
+        );
         $this->assertTrue($this->objFromFixture(TestimonialCategory::class, 'one')->canView(Member::singleton()));
     }
 }

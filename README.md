@@ -1,11 +1,8 @@
 # SilverStripe Elemental Testimonials
 
-Testimonial Element for SilverStripe 4.
+Testimonial Element for SilverStripe Elemental.
 
-[![Build Status](https://travis-ci.org/dynamic/silverstripe-elemental-testimonials.svg?branch=master)](https://travis-ci.org/dynamic/silverstripe-elemental-testimonials)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-testimonials/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-testimonials/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-testimonials/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-testimonials/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-testimonials/badges/build.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-testimonials/build-status/master)
+![Build](https://github.com/dynamic/silverstripe-elemental-testimonials/actions/workflows/ci.yml/badge.svg)
 [![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-testimonials/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-testimonials)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-testimonials/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-testimonials)
@@ -15,8 +12,8 @@ Testimonial Element for SilverStripe 4.
 
 ## Requirements
 
-* silverstripe/recipe-cms: ^4@dev
-* dnadesign/silverstripe-elemental: ^4@dev
+* Silverstripe ^4.0
+* Silverstripe Elemental ^4.0
 
 ## Installation
 
@@ -59,8 +56,29 @@ The default templates are based off [Bootstrap 4](https://getbootstrap.com/) cla
 
 ## Getting more elements
 
-See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#getting-more-elements)
+See [Elemental modules by Dynamic](https://github.com/orgs/dynamic/repositories?q=elemental&type=all&language=&sort=)
 
 ## Configuration
 
 See [SilverStripe Elemental Configuration](https://github.com/dnadesign/silverstripe-elemental#configuration)
+
+## Maintainers
+
+*  [Dynamic](http://www.dynamicagency.com) (<dev@dynamicagency.com>)
+
+## Bugtracker
+Bugs are tracked in the issues section of this repository. Before submitting an issue please read over
+existing issues to ensure yours is unique.
+
+If the issue does look like a new bug:
+
+- Create a new issue
+- Describe the steps required to reproduce your issue, and the expected outcome. Unit tests, screenshots
+  and screencasts can help here.
+- Describe your environment as detailed as possible: SilverStripe version, Browser, PHP version,
+  Operating System, any installed SilverStripe modules.
+
+Please report security issues to the module maintainers directly. Please don't file security issues in the bugtracker.
+
+## Development and contribution
+If you would like to make contributions to the module please ensure you raise a pull request and discuss with the module maintainers.

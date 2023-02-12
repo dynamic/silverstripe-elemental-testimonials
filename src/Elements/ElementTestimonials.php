@@ -120,7 +120,8 @@ class ElementTestimonials extends BaseElement
                     'TestimonialCategories'
                 ]);
 
-                $fields->addFieldToTab('Root.Main',
+                $fields->addFieldToTab(
+                    'Root.Main',
                     'Limit',
                     ListboxField::create(
                         'TestimonialCategories',
