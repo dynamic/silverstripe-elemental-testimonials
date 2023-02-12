@@ -1,6 +1,6 @@
 # SilverStripe Elemental Testimonials
 
-Testimonial Element for SilverStripe Elemental.
+Testimonials Block for SilverStripe Elemental.
 
 ![Build](https://github.com/dynamic/silverstripe-elemental-testimonials/actions/workflows/ci.yml/badge.svg)
 [![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-testimonials/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-testimonials)
@@ -18,6 +18,10 @@ Testimonial Element for SilverStripe Elemental.
 ## Installation
 
 `composer require dynamic/silverstripe-elemental-testimonials`
+
+## License
+
+See [License](license.md)
 
 ## Usage
 
@@ -40,19 +44,19 @@ Each Testimonial includes the following fields:
 #### Front End sample of a Testimonial Element
 The default templates are based off [Bootstrap 4](https://getbootstrap.com/) classes/styling
 
-![Front End sample of a Testimonials Element](./readme-images/testimonial-block-sample.jpg)
+![Front End sample of a Testimonials Element](./docs/_en/images/testimonial-block-sample.jpg)
 
 #### CMS - Testimonials Main Tab
-![CMS - Testimonials Main Tab](./readme-images/testimonial-block-cms-main.jpg)
+![CMS - Testimonials Main Tab](./docs/_en/images/testimonial-block-cms-main.jpg)
 
 #### CMS - Testimonials Category Tab
-![CMS - Testimonials Category Tab](./readme-images/testimonial-block-cms-categories.jpg)
+![CMS - Testimonials Category Tab](./docs/_en/images/testimonial-block-cms-categories.jpg)
 
 #### CMS - Testimonials List
-![CMS - Testimonials List](./readme-images/testimonial-block-cms-testimonial-list.jpg)
+![CMS - Testimonials List](./docs/_en/images/testimonial-block-cms-testimonial-list.jpg)
 
 #### CMS - Testimonials Edit
-![CMS - Testimonials Edit](./readme-images/testimonial-block-cms-testimonial-edit.jpg)
+![CMS - Testimonials Edit](./docs/_en/images/testimonial-block-cms-testimonial-edit.jpg)
 
 ## Getting more elements
 
