@@ -12,8 +12,9 @@ Testimonials Block for SilverStripe Elemental.
 
 ## Requirements
 
-* Silverstripe ^4.0
-* Silverstripe Elemental ^4.0
+* Silverstripe ^5
+* Silverstripe Elemental ^5
+* symbiote/silverstripe-gridfieldextensions ^4.0
 
 ## Installation
 
