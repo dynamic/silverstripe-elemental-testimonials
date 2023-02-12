@@ -1,6 +1,6 @@
 {
     "name": "dynamic/silverstripe-elemental-testimonials",
-    "description": "Testimonials element for the SilverStripe Elemental Module",
+    "description": "Testimonials element for Silverstripe Elemental",
     "license": "BSD-3-Clause",
     "type": "silverstripe-vendormodule",
     "keywords": [
@@ -12,16 +12,16 @@
         {
             "name": "Dynamic",
             "email": "dev@dynamicagency.com",
-            "homepage": "http://www.dynamicagency.com"
+            "homepage": "https://www.dynamicagency.com"
         }
     ],
     "require": {
-        "dnadesign/silverstripe-elemental": "^4.0",
-        "silverstripe/vendor-plugin": "^1.0",
-        "symbiote/silverstripe-gridfieldextensions": "^3.0"
+        "dnadesign/silverstripe-elemental": "^5.0",
+        "silverstripe/framework": "^5",
+        "symbiote/silverstripe-gridfieldextensions": "^4.0"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^2"
+        "silverstripe/recipe-testing": "^3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
