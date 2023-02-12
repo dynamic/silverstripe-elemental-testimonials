@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.2](https://github.com/dynamic/silverstripe-elemental-testimonials/tree/2.0.2) (2023-02-12)
+* CI update workflow to GitHub Actions by @jsirish in https://github.com/dynamic/silverstripe-elemental-testimonials/pull/24
+* README update file paths by @jsirish in https://github.com/dynamic/silverstripe-elemental-testimonials/pull/25
+
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-testimonials/compare/2.0.1...2.0.2
+
 ## [2.0.1](https://github.com/dynamic/silverstripe-elemental-testimonials/tree/2.0.1) (2019-03-20)
 [Full Changelog](https://github.com/dynamic/silverstripe-elemental-testimonials/compare/1.0.2...2.0.1)
 
