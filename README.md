@@ -1,11 +1,9 @@
 # SilverStripe Elemental Testimonials
 
-[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
-
 Testimonials Block for SilverStripe Elemental.
 
 ![Build](https://github.com/dynamic/silverstripe-elemental-testimonials/actions/workflows/ci.yml/badge.svg)
-[![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-testimonials/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-testimonials)
+[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-testimonials/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-testimonials)
 [![Total Downloads](https://poser.pugx.org/dynamic/silverstripe-elemental-testimonials/downloads)](https://packagist.org/packages/dynamic/silverstripe-elemental-testimonials)
