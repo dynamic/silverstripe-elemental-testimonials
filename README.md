@@ -1,5 +1,7 @@
 # SilverStripe Elemental Testimonials
 
+[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
+
 Testimonials Block for SilverStripe Elemental.
 
 ![Build](https://github.com/dynamic/silverstripe-elemental-testimonials/actions/workflows/ci.yml/badge.svg)
