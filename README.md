@@ -2,19 +2,19 @@
 
 Testimonials Block for SilverStripe Elemental.
 
-![Build](https://github.com/dynamic/silverstripe-elemental-testimonials/actions/workflows/ci.yml/badge.svg)
-[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
+![CI](https://github.com/dynamic/silverstripe-elemental-testimonials/actions/workflows/ci.yml/badge.svg)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/dynamic?label=Sponsors&logo=GitHub%20Sponsors&style=flat&color=ea4aaa)](https://github.com/sponsors/dynamic)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-testimonials/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-testimonials)
 [![Total Downloads](https://poser.pugx.org/dynamic/silverstripe-elemental-testimonials/downloads)](https://packagist.org/packages/dynamic/silverstripe-elemental-testimonials)
-[![Latest Unstable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-testimonials/v/unstable)](https://packagist.org/packages/dynamic/silverstripe-elemental-testimonials)
 [![License](https://poser.pugx.org/dynamic/silverstripe-elemental-testimonials/license)](https://packagist.org/packages/dynamic/silverstripe-elemental-testimonials)
 
 ## Requirements
 
-* Silverstripe ^5
-* Silverstripe Elemental ^5
-* symbiote/silverstripe-gridfieldextensions ^4.0
+* PHP: ^8.3
+* SilverStripe: ^6
+* SilverStripe Elemental: ^6
+* symbiote/silverstripe-gridfieldextensions: ^5
 
 ## Installation
 
@@ -23,6 +23,17 @@ Testimonials Block for SilverStripe Elemental.
 ## License
 
 See [License](license.md)
+
+## Features
+
+- **Testimonials Element Block** - Display customer testimonials within Elemental content areas
+- **Category-Based Filtering** - Organize testimonials by categories and display specific subsets
+- **Random Display Order** - Testimonials are shown in random order for variety on each page load
+- **Configurable Limit** - Control how many testimonials display (or show all with 0 limit)
+- **Rich Testimonial Fields** - Includes Title, Content, Author Name, Position, and Affiliation
+- **Bootstrap 4 Templates** - Default templates styled with Bootstrap 4 classes
+- **CMS Permission Control** - Manage testimonial access with dedicated permissions
+- **GridField Management** - Easy testimonial and category management through the CMS
 
 ## Usage
 
@@ -67,9 +78,23 @@ See [Elemental modules by Dynamic](https://github.com/orgs/dynamic/repositories?
 
 See [SilverStripe Elemental Configuration](https://github.com/dnadesign/silverstripe-elemental#configuration)
 
+## Upgrading from version 3
+
+SilverStripe Elemental Testimonials 4.0 is compatible with SilverStripe 6. Key changes:
+
+- Updated to SilverStripe CMS 6
+- Requires PHP 8.3 or higher
+- Updated all major dependencies to their SS6-compatible versions:
+  - `dnadesign/silverstripe-elemental`: ^5 → ^6
+  - `silverstripe/framework`: ^5 → ^6
+  - `symbiote/silverstripe-gridfieldextensions`: ^4 → ^5
+  - `silverstripe/recipe-testing`: ^3 → ^4
+
+See the [SilverStripe 6 Upgrade Guide](https://docs.silverstripe.org/en/6/) for more details.
+
 ## Maintainers
 
-*  [Dynamic](http://www.dynamicagency.com) (<dev@dynamicagency.com>)
+*  [Dynamic](https://www.dynamicagency.com) (<dev@dynamicagency.com>)
 
 ## Bugtracker
 Bugs are tracked in the issues section of this repository. Before submitting an issue please read over
