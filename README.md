@@ -85,16 +85,16 @@ SilverStripe Elemental Testimonials 4.0 is compatible with SilverStripe 6. Key c
 - Updated to SilverStripe CMS 6
 - Requires PHP 8.3 or higher
 - Updated all major dependencies to their SS6-compatible versions:
-  - `dnadesign/silverstripe-elemental`: ^4 → ^6
-  - `silverstripe/framework`: ^4 → ^6
-  - `symbiote/silverstripe-gridfieldextensions`: ^3 → ^5
-- Removed branch-alias configuration
+  - `dnadesign/silverstripe-elemental`: ^5 → ^6
+  - `silverstripe/framework`: ^5 → ^6
+  - `symbiote/silverstripe-gridfieldextensions`: ^4 → ^5
+  - `silverstripe/recipe-testing`: ^3 → ^4
 
 See the [SilverStripe 6 Upgrade Guide](https://docs.silverstripe.org/en/6/) for more details.
 
 ## Maintainers
 
-*  [Dynamic](http://www.dynamicagency.com) (<dev@dynamicagency.com>)
+*  [Dynamic](https://www.dynamicagency.com) (<dev@dynamicagency.com>)
 
 ## Bugtracker
 Bugs are tracked in the issues section of this repository. Before submitting an issue please read over
