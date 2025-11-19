@@ -22,12 +22,13 @@
         }
     ],
     "require": {
-        "dnadesign/silverstripe-elemental": "^5.0",
-        "silverstripe/framework": "^5",
-        "symbiote/silverstripe-gridfieldextensions": "^4.0"
+        "php": "^8.3",
+        "dnadesign/silverstripe-elemental": "^6.0",
+        "silverstripe/framework": "^6",
+        "symbiote/silverstripe-gridfieldextensions": "^5.0"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^3"
+        "silverstripe/recipe-testing": "^4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -39,11 +40,6 @@
     },
     "config": {
         "process-timeout": 600
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "3.x-dev"
-        }
     },
     "scripts": {
         "lint": "vendor/bin/phpcs src/ tests/",
