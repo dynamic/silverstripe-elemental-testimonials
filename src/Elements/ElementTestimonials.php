@@ -34,7 +34,7 @@ class ElementTestimonials extends BaseElement
     /**
      * @var string
      */
-    private static $plural_name = 'Testimonials Blocks';
+    private static $plural_name = 'Testimonials';
 
     /**
      * @var string
