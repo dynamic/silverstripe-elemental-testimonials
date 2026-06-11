@@ -29,12 +29,12 @@ class ElementTestimonials extends BaseElement
     /**
      * @var string
      */
-    private static $singular_name = 'Testimonials Element';
+    private static $singular_name = 'Testimonials';
 
     /**
      * @var string
      */
-    private static $plural_name = 'Testimonials Elements';
+    private static $plural_name = 'Testimonials Blocks';
 
     /**
      * @var string
@@ -93,14 +93,6 @@ class ElementTestimonials extends BaseElement
         $blockSchema = parent::provideBlockSchema();
         $blockSchema['content'] = $this->getSummary();
         return $blockSchema;
-    }
-
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-        return _t(__CLASS__ . '.BlockType', 'Testimonials');
     }
 
     /**
