@@ -1,0 +1,14 @@
+parameters:
+  level: 1
+  treatPhpDocTypesAsCertain: false
+  paths:
+    - src
+  ignoreErrors:
+    # Pre-existing PHPStan finding in src/, suppressed so that enabling PHPStan in
+    # CI stays a config-only change with no behaviour risk. Fix the code and remove
+    # this entry in the PR that closes dynamic/silverstripe-elemental-testimonials#40.
+    -
+      message: '#^Method Dynamic\\Elements\\Elements\\ElementTestimonials\:\:getSummary\(\) should return Dynamic\\Elements\\Elements\\DBHTMLText but return statement is missing\.$#'
+      identifier: return.missing
+      count: 1
+      path: src/Elements/ElementTestimonials.php
